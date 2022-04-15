@@ -53,8 +53,8 @@ var questions = [
 // Function call
 if(play.toLowerCase()==="yes"){
   for(var i=0 ; i < questions.length ; i++){
-    var j = i+1;
-    var answer = readlinesync.question("Question "+j+". "+questions[i].question+" :").toLowerCase();
+    var count = i+1;
+    var answer = readlinesync.question("Question "+count+". "+questions[i].question+" :").toLowerCase();
     quiz(questions[i].question,questions[i].answer);
   }
   console.log ("Final Score is "+score);
