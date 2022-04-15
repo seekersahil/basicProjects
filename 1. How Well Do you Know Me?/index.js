@@ -35,7 +35,7 @@ var questions = [
 ];
 
 // Function call
-if(play==="yes"){
+if(play.toLowerCase()==="yes"){
   for(var i=0 ; i < questions.length ; i++){
     quiz(questions[i].question,questions[i].answer);
   }
